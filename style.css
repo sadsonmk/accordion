@@ -1,0 +1,39 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px 5px;
+    text-align: left;
+    font-size: 18px;
+    border: none;
+}
+
+.btn:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+
+.btn::after {
+    content: '\002B';
+    float: right;
+    margin-right: 20px;
+}
+
+.active::after {
+    content: '\2212';
+}
+
+.panel {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+}
